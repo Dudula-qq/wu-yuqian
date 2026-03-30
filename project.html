@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伍雨倩 · 项目经历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .nav a:hover {
+            background: #667eea;
+            color: white;
+        }
+        .nav a.active {
+            background: #667eea;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .project-card {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+            border-radius: 15px;
+            border: 1px solid #eee;
+        }
+
+        .project-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .project-role {
+            font-size: 0.85em;
+            color: #667eea;
+            margin-bottom: 12px;
+        }
+
+        .project-desc {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tech-tag {
+            background: #e8ecf7;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="nav">
+            <a href="index.html">📄 个人简介</a>
+            <a href="campus.html">🎓 校园经历</a>
+            <a href="internship.html">💼 实习经历</a>
+            <a href="project.html" class="active">🚀 项目经历</a>
+        </div>
+
+        <h1>🚀 项目经历</h1>
+        <div class="subtitle">从0到1 · 搭建个人介绍网站</div>
+
+        <div class="project-card">
+            <div class="project-title">📁 个人介绍网站 · 伍雨倩</div>
+            <div class="project-role">独立开发 · 2026.03 - 至今</div>
+            <div class="project-desc">
+                从0开始学习HTML/CSS，独立完成个人介绍网站的设计与开发。包含个人简介、校园经历、实习经历、项目经历4个页面，实现响应式布局，支持手机/电脑访问。
+            </div>
+            <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Flex布局</span>
+                <span class="tech-tag">响应式设计</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">🤖 智能项目管理助手 · 百度机器人dodo</div>
+            <div class="project-role">产品协作 · 2025.12 - 2026.04</div>
+            <div class="project-desc">
+                协助产品经理完成机器人dodo的需求梳理与功能迭代。基于agent自动催更机制，推动200+项目按时反馈，关键节点信息同步效率提升约30%，累计提前识别并规避项目延期风险2次。
+            </div>
+            <div class="project-tech">
+                <span class="tech-tag">Agent</span>
+                <span class="tech-tag">自动化催更</span>
+                <span class="tech-tag">风险管理</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">📊 数据治理工具包 · 百度智能云</div>
+            <div class="project-role">数据产品建设 · 2025.12 - 2026.04</div>
+            <div class="project-desc">
+                开发自动化数据处理框架，实现多源Excel智能清洗与28项核心指标动态计算。构建跨域可视化看板，形成可复用的数据治理工具包并在业务部门推广应用。
+            </div>
+            <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">SugarBI</span>
+                <span class="tech-tag">自动化</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
